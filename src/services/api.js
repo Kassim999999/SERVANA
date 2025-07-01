@@ -26,3 +26,12 @@ export const registerUser = async (data) => {
   const res = await axios.post(`${API_BASE_URL}/auth/register`, data);
   return res.data;
 };
+
+export const getMyBookings = async () => {
+  const token = localStorage.getItem("token");
+  const res = await axios.get(`${API_BASE_URL}/my-bookings`, {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+  return res.data;
+};
+
