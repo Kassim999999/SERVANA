@@ -35,3 +35,10 @@ export const getMyBookings = async () => {
   return res.data;
 };
 
+export const getAllBookings = async () => {
+  const token = localStorage.getItem("token");
+  const res = await axios.get(`${API_BASE_URL}/bookings`, {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+  return res.data;
+};

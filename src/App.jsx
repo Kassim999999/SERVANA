@@ -5,6 +5,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import MyBookings from "./pages/MyBookings";
 import Navbar from "./components/Navbar";
+import AdminDashboard from "./pages/AdminDashboard";
 // ... other pages
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/my-bookings" element={<MyBookings />} />
+        <Route path="/admin" element={<AdminDashboard />} />
         {/* other routes */}
       </Routes>
     </Router>
