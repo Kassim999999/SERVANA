@@ -1,0 +1,77 @@
+/* Base styling */
+.homepage {
+    font-family: 'Inter', sans-serif;
+    background-color: #FFFFFF;
+    color: #1A1A1A;
+}
+
+/* Hero Section */
+.hero {
+    background: url("/hero-image.jpg") center/cover no-repeat;
+    padding: 120px 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* dark overlay for text readability */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #FDFCFB;
+}
+
+.hero-btn {
+    background-color: #00B8A9;
+    color: white;
+    padding: 14px 32px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #019e92;
+}
+
+/* Overview section */
+.overview {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #FDFCFB;
+    color: #2C2C2C;
+}
+
+.overview h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.overview p {
+    font-size: 16px;
+    color: #6B7280;
+}
