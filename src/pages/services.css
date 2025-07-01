@@ -1,0 +1,86 @@
+.services-page {
+    font-family: 'Inter', sans-serif;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #2C2C2C;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.filters button {
+    background-color: #EFE7DD;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #2C2C2C;
+    transition: background 0.3s;
+}
+
+.filters button.active {
+    background-color: #00B8A9;
+    color: white;
+}
+
+.filters button:hover {
+    background-color: #FF6F61;
+    color: white;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service-card {
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    text-align: center;
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #1A1A1A;
+}
+
+.price {
+    font-size: 16px;
+    color: #6B7280;
+}
+
+.book-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #00B8A9;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.book-btn:hover {
+    background-color: #019e92;
+}
