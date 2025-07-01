@@ -26,6 +26,10 @@ export default function Navbar() {
         ) : (
           <button onClick={handleLogout}>Logout</button>
         )}
+        {user?.name && user?.email && user?.email.includes("admin") && (
+        <Link to="/admin">Admin</Link>
+        )}
+
       </div>
     </nav>
   );
